@@ -1,0 +1,7 @@
+{
+    "svn.ignoreMissingSvnWarning": true,
+    "python.analysis.extraPaths": [
+        "./sources",
+        "D:/Coding/EssayWriter/request.py"
+    ]
+}
