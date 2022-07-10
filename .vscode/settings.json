@@ -2,6 +2,7 @@
     "svn.ignoreMissingSvnWarning": true,
     "python.analysis.extraPaths": [
         "./sources",
-        "D:/Coding/EssayWriter/request.py"
+        "D:/Coding/EssayWriter/request.py",
+        "C:/Users/arish/AppData"
     ]
 }
