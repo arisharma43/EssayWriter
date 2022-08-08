@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<script
+  src="myscripts.js">
+</script>
+
+<button class ="tablinks" onclick="openPage('Home',this)" id="defaultOpen">Home</button>
+<button class="tablinks" onclick="openPage('Disclaimer',this)">Disclaimer</button>
+<button class="tablinks" onclick="openPage('FAQ',this)">FAQ</button>
+
+
+<!-- <head>
     <title>Essay Writer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,11 +23,11 @@
     .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
     .fa-anchor,.fa-coffee {font-size:200px}
     </style>
-</head>
-
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+</head> -->
+<div id="Home" class="tabcontent">
+  <!-- <header class="w3-container w3-red w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">Welcome to Essay Writer</h1>
-    <p class="w3-xlarge">Generate an essay below</p>
+    <p class="w3-xlarge">Generate an essay below</p> -->
     <form method="POST" action="/">
         <input name="user_input">
         <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Submit</button>
@@ -26,19 +35,25 @@
 
     {{api_response|safe}}
     
-</header>
+  <!-- </header> -->
+</div>
 
-<div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <h1>Disclaimer!</h1>
-        <h5 class="w3-padding-32">This website is just a place to experiment and see the capabilities of GPT-3 to create essays given a prompt. Usage of the response for any real essays amounts to plagiarism. Anyways, you might like your own essays better 😀!</h5>
-      </div>
-  
-      <div class="w3-third w3-center">
-        <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-      </div>
-    </div>
-  </div>
+<div id="Disclaimer" class="tabcontent">
+  <h3>
+    Disclaimer!
+  </h3>
+  <p>
+    This website is just a place to experiment and see the capabilities of GPT-3 to create essays given a prompt. Usage of the response for any real essays amounts to plagiarism. Anyways, you might like your own essays better 😀!
+  </p>
+</div>
+
+<div id="FAQ" class="tabcontent">
+  <h3>
+    FAQ
+  </h3>
+  <p>
+    Write an essay about Hellen Keller. Hellen Keller is one of the most inspiring and influential people of the 20th century. She was born in Tuscumbia, Alabama in 1880, and she lost her sight and hearing at the age of 19 months due to an illness. Despite her disabilities, Hellen Keller went on to achieve great things. She graduated from Radcliffe College in 1904, and she became a world-renowned lecturer and author. Her autobiography, “The Story of My Life”, was published in 1902 and remains an inspiration to people all over the world. Hellen Keller’s story is one of courage, determination, and hope. She overcame great odds to achieve her goals, and she proved that anything is possible if you set your mind to it. Her story is an inspiration to us all, and her legacy will continue to live on for many years to come.
+  </p>
+</div>
 
 </html>
